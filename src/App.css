@@ -244,8 +244,8 @@
 
   /* リセットボタン */
   .reset-button {
-    margin-top: 0px;
-    padding: 5px 10px;
-    font-size: 12px;
+    margin-top: 7px;
+    padding: 10px 10px;
+    font-size: 18px;
   }
 }
