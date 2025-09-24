@@ -125,7 +125,7 @@
   margin: 15px auto;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transform: translateX(3px);
+  transform: translateX(8px);
 }
 
 .mixed-color:hover {
@@ -156,48 +156,87 @@
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
   .main-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    gap: 0px;     /* 要素間の縦スペース最小化 */
+    padding: 0px; /* 全体余白も最小化 */
   }
-  
-  .selected-colors,
+
+  .selected-color {
+  margin: 0;    /* 外側余白ゼロ */
+  padding: 0;   /* 内側余白ゼロ */
+  }
+
   .result {
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
+    padding: 0;   /* 内側余白なし */
+    margin: 0;    /* 外側余白なし */
   }
-  
+
+  /* メインタイトル */
+  h1 {
+    font-size: 1rem;
+    margin: 1px 0;
+  }
+
+  /* 色を選んでねタイトル */
+  .preset-colors h2 {
+    font-size: 1rem;
+    margin: 1px 0;
+  }
+
+  /* 選んだ色タイトル */
+  .selected-colors h3 {
+    font-size: 0.95rem;
+    margin: 0;    /* 上下余白完全に削除 */
+  }
+
+  /* どんな色かなタイトル */
+  .result h2 {
+    font-size: 0.95rem;
+    margin: 0;    /* 上下余白完全に削除 */
+  }
+
+  .preset-colors {
+  margin: 0;      /* 上下の余白ゼロ */
+  padding: 5px 0; /* 上下パディング少しだけ */
+  }
+
+  /* 色ボタン */
+  .color-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+
   .color-preview {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 50px;
   }
-  
+
+  /* 混色表示 */
   .mixed-color {
-    width: 200px;
-    height: 100px;
+    width: 70%;
+    height: 60px; /* 少し低めにして画面収める */
+    border-radius: 6px;
+    margin-top: 0px; /* タイトルとの間だけ微調整 */
   }
-}
 
-.color-info {
-  color: #555 !important;
-  font-size: 12px;
-  margin: 3px 0;
-}
+  /* 選んだ色の表示 */
+  .selected-display {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin: 0;      /* 上下余白なし */
+    padding: 0;
+  }
 
-.result-name {
-  color: #333 !important;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 10px 0;
-  transform: translateX(9px);
-}
-
-.color-code {
-  font-family: 'Courier New', monospace;
-  background-color: #e9ecef;
-  color: #333 !important;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 12px;
-  margin: 5px 0;
+  /* リセットボタン */
+  .reset-button {
+    margin-top: 0px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
 }

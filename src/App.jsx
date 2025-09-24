@@ -121,7 +121,6 @@ function App() {
                 className="color-preview"
                 style={{ backgroundColor: color }}
               ></div>
-              <p className="color-name">{getPresetColorName(color)}</p>
             </div>
           ))}
         </div>
