@@ -6,14 +6,14 @@ import './App.css'
 function App() {
   const presetColors = [
     { name: '赤', color: '#FF0000'},
-    { name: 'ピンク', color: '#FFC0CB' },
+    { name: 'ピンク', color: '#ff33f5ff' },
     { name: '青', color: '#0000FF' },
     { name: '水色', color: '#00FFFF' },
     { name: 'オレンジ', color: '#FFA500' },
     { name: '黄', color: '#FFFF00' },
-    { name: '緑', color: '#00FF00' },
-    { name: '黄緑', color: '#B2D235'},
-    { name: '紫', color: '#8B52A1' },
+    { name: '緑', color: '#008000' },
+    { name: '黄緑', color: '#5AFF19'},
+    { name: '紫', color: '#b700ffff' },
     { name: '茶色', color: '#864A2B' },
     { name: '灰色', color: '#717375' },
     { name: '白', color: '#FFFFFB' },
@@ -130,7 +130,7 @@ function App() {
       {/* 結果表示 */}
       {selectedColors.length === 2 && (
         <div className="result">
-          <h2> 🎨 どんな色かな </h2>
+          <h2> どんな色かな </h2>
           <div
             className="mixed-color"
             style={{ backgroundColor: mixedColor }}

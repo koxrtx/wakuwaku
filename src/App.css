@@ -13,7 +13,7 @@
 .preset-colors h2 {
   color: #333;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .color-grid {
@@ -46,7 +46,7 @@
 
 .main-content {
   display: flex;
-  gap: 30px;
+  gap: 0px;
   justify-content: center;
   align-items: flex-start;
   margin-top: 20px;
@@ -57,14 +57,14 @@
   flex: 1;
   min-width: 300px;
   max-width: 400px;
-  padding: 20px;
+  padding: 0px;
   border-radius: 10px;
 }
 
 .selected-colors h3 {
   color: #333 !important;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   font-size: 1.3rem;
 }
 
@@ -95,7 +95,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .reset-button:hover {
@@ -103,27 +103,29 @@
 }
 
 .result {
-  flex: 1;
+  flex: none;
   min-width: 300px;
-  max-width: 400px;
-  padding: 20px;
+  max-width: 300px;
+  padding: 0px;
   border-radius: 10px;
-  margin-top: 0; 
+  margin-top: 0;
 }
 
 .result h2 {
   color: #333 !important;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 .mixed-color {
-  width: 150px; 
+  width: 150px;
   height: 80px;
   margin: 15px auto;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transform: translateX(3px);
 }
 
 .mixed-color:hover {
@@ -186,6 +188,7 @@
   font-size: 16px;
   font-weight: bold;
   margin: 10px 0;
+  transform: translateX(9px);
 }
 
 .color-code {
