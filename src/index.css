@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(49, 47, 48, 0.87);
-  background-color: #f6d2f0;
+  background-color: #91d2f7;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,6 +27,7 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url('/pc-background.jpg');
 }
 
 #root {
