@@ -133,6 +133,15 @@
   transition: transform 0.2s ease;
 }
 
+.result-name {
+  margin: 0;           /* 上下余白を消す */
+  padding: 0;
+  font-size: 0.95rem;  /* タイトルと揃える */
+  text-align: center;  /* 中央揃え */
+  color: #333;
+  transform: translateX(13px);
+}
+
 .ratio-control {
   margin: 20px 0;
   background-color: #f8f9fa;
@@ -160,20 +169,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 0px;     /* 要素間の縦スペース最小化 */
-    padding: 0px; /* 全体余白も最小化 */
+    gap: 0px;
+    padding: 0px;
   }
 
   .selected-color {
-  margin: 0;    /* 外側余白ゼロ */
-  padding: 0;   /* 内側余白ゼロ */
+  margin: 0;
+  padding: 0;
   }
 
   .result {
     width: 100%;
     max-width: 100%;
-    padding: 0;   /* 内側余白なし */
-    margin: 0;    /* 外側余白なし */
+    padding: 0;
+    margin: 0;
   }
 
   /* メインタイトル */
@@ -191,18 +200,18 @@
   /* 選んだ色タイトル */
   .selected-colors h3 {
     font-size: 0.95rem;
-    margin: 0;    /* 上下余白完全に削除 */
+    margin: 0;
   }
 
   /* どんな色かなタイトル */
   .result h2 {
     font-size: 0.95rem;
-    margin: 0;    /* 上下余白完全に削除 */
+    margin: 0;
   }
 
   .preset-colors {
-  margin: 0;      /* 上下の余白ゼロ */
-  padding: 5px 0; /* 上下パディング少しだけ */
+  margin: 0; 
+  padding: 5px 0;
   }
 
   /* 色ボタン */
@@ -219,9 +228,9 @@
   /* 混色表示 */
   .mixed-color {
     width: 70%;
-    height: 60px; /* 少し低めにして画面収める */
+    height: 60px;
     border-radius: 6px;
-    margin-top: 0px; /* タイトルとの間だけ微調整 */
+    margin-top: 0px;
   }
 
   /* 選んだ色の表示 */
