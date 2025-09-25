@@ -13,7 +13,7 @@ function App() {
     { name: '黄', color: '#FFFF00' },
     { name: '緑', color: '#008000' },
     { name: '黄緑', color: '#5AFF19'},
-    { name: '紫', color: '#b700ffff' },
+    { name: '紫', color: '#b700ff' },
     { name: '茶色', color: '#864A2B' },
     { name: '灰色', color: '#717375' },
     { name: '白', color: '#FFFFFB' },
