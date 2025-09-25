@@ -1,16 +1,26 @@
-# React + Vite
+# 🎨 何色になるかな？
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+13色の中から2色選んで、混ぜた色がわかるアプリです。
+遊びながら色の名前や色の変化を学べます。
 
-Currently, two official plugins are available:
+娘が最近「色をまぜたら何色？」ってよく聞いてきて、
+色に興味を持ち始めました。
+そこで、色の勉強と混ぜた色の和風の色名を一緒に表示することで、
+遊びながら学べるアプリを作りました。
+このアプリでは、選んだ2色を混ぜた結果の色と、その色名を確認できます。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 特徴
+	•	13色から2色を選べる
+	•	選んだ2色を混ぜた結果の色をリアルタイムで表示
+	•	混ざった色の名前も表示
+	•	小さな子どもでも楽しめるシンプルなUI
 
-## React Compiler
+## 使い方
+	1.	13色の色リストから好きな2色を選ぶ
+	2.	「まぜる」ボタンを押す
+	3.	画面に混ざった色と色名が表示される
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 技術スタック
+		HTML / CSS / JavaScript
+		React（状態管理とリアルタイム更新用）
